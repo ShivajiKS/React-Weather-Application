@@ -1,0 +1,115 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.app{
+    width:450px;
+    height:600px;
+    background-color:aqua;
+    padding:1rem;
+    position:relative;
+    border-radius:15px;
+    box-shadow: 2px 3px 17px rgba(0,0,0.644);
+    background-image: url(../public/assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+}
+.app .search{
+   text-align: center;
+   padding: 0.6rem 0; 
+}
+.search input[type="text"]{
+    width: 60%;
+    height:50px;
+   
+}
+.search input[type="submit"]{
+    width: 25%;
+    height:50px;
+    margin-left:0.3rem;
+}
+.search input[type="submit"]:hover{
+    cursor: pointer;
+}
+.search input[type="text"],input[type="submit"]{
+    text-align:center; 
+    font-size: 1.2rem;
+    border-radius:8px;
+    border:none;
+    outline: none;
+    color:#000;
+}
+.search input[type="text"]::placeholder{
+    color:rgb(177, 177, 177)
+}
+.app .container{
+    padding:10px;
+    border-radius:10px;
+}
+p{
+    font-size:1.6rem;
+    text-align:center;
+}
+h1{
+    font-size:4.6rem;
+
+}
+.app .top {
+    width:100%;
+    margin:1rem auto;
+}
+
+.top .location p{
+    padding:0 0 20px 0;
+    font-size:32px;
+
+}
+.top .temp{
+    text-align:center;
+}
+.top .temp h1{
+    padding-bottom:20px;
+
+}
+.top .desc{
+    font-size:32px;
+
+}
+.container .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom:0px;
+    margin:1rem -1.5rem;
+    padding:1rem;
+    width:100%;
+
+}
+.bottom p{
+    font-size:18px;
+
+}
+.bottom .feels, 
+.bottom .humidity,
+.bottom .wind{
+    border-bottom:2px solid rgb(177,177,177);
+}
+.appTitle{
+    position: absolute;
+    top:18px;
+    margin-left: 15vh;
+}
+.appTitle h3{
+    font-size: 1.5rem
+}
